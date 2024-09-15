@@ -1,0 +1,16 @@
+<div class="skills-container">
+    <h1>My Skills</h1>
+
+    <div class="skills-list">
+        <div class="skill-card" *ngFor="let skill of skills">
+            <img [src]="skill.icon" alt="{{ skill.name }} icon" class="skill-icon">
+            <div class="skill-info">
+                <h2>{{ skill.name }}</h2>
+                <p>{{ skill.description }}</p>
+                <!-- <div class="progress-bar">
+                    <div class="progress" [style.width]="skill.level + '%'"></div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

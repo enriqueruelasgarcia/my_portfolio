@@ -1,0 +1,61 @@
+.certifications-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.certifications-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certification-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certification-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.certification-info h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.certification-info p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.certification-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1fa6d8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.certification-link:hover {
+    background-color: #159ac7;
+}

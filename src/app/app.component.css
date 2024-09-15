@@ -1,0 +1,116 @@
+/* Estilos generales para el nav */
+
+nav {
+    margin-top: -8px;
+    text-align: center;
+    background-color: #121729;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+nav a.button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #12395b;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    position: relative;
+    min-width: 60px;
+    margin: 0 20px;
+}
+
+nav a.button:hover {
+    background-color: #1fa6d8;
+    transform: scale(1.05);
+}
+
+.text {
+    display: none;
+}
+
+.icon {
+    display: inline;
+    font-size: 20px;
+    color: white;
+    margin-left: 8px;
+}
+
+nav a.button:hover .text {
+    display: inline;
+}
+
+nav a.button:hover .icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a.button {
+        margin: 10px 0;
+        width: 80%;
+    }
+    .icon {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+    .nav-links {
+        gap: 10px;
+    }
+    nav a.button {
+        padding: 8px 16px;
+    }
+    .icon {
+        font-size: 20px;
+    }
+}
+
+router-outlet {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.router-animation {
+    animation: fadeInOut 0.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
